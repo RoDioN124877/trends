@@ -1,0 +1,542 @@
+@charset "UTF-8";
+header .header__top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100px;
+  position: fixed;
+  z-index: 3;
+  background-color: #fff;
+  width: 100%;
+}
+header .header__top .logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header .header__top .logo img {
+  width: 300px;
+}
+header .header__top .search {
+  position: relative;
+  z-index: 3;
+}
+header .header__top .search .search_input {
+  width: 500px;
+  height: 50px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: rgb(238, 238, 238);
+  transition: 0.2s;
+  outline: none;
+}
+header .header__top .search .search_input:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(238, 238, 238);
+}
+header .header__top .search .search_input:active {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(238, 238, 238);
+}
+header .header__top .search .search_btn {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/header/searchBTN.png);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+header .header__top .basket {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+header .header__top .basket P {
+  color: rgb(60, 190, 255);
+  margin: 0%;
+}
+header .header__top .basket img {
+  width: 50px;
+}
+
+.navbar-nav {
+  margin: auto;
+  margin-top: 100px;
+}
+
+.trends {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: normal;
+  color: black;
+  list-style: none;
+}
+.trends:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.mr_custom {
+  margin-top: 10px;
+}
+
+@media (max-width: 990px) {
+  .navbar-brand {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  header .header__top {
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    min-height: 100px;
+    position: static;
+  }
+  header .header__top .logo {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+  }
+  header .header__top .logo span {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: normal;
+    color: rgb(60, 190, 255);
+  }
+  header .header__top .search .search_input {
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    transition: 0.2s;
+    outline: none;
+  }
+  header .header__top .search .search_input:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(238, 238, 238);
+  }
+  header .header__top .search .search_input:active {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(238, 238, 238);
+  }
+  header .header__top .search .search_btn {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/header/searchBTN.png);
+    background-position: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  header .header__top .basket {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header .header__top .basket P {
+    color: rgb(60, 190, 255);
+    margin: 0%;
+  }
+  header .header__top .basket img {
+    width: 50px;
+  }
+  .trends {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: normal;
+    color: black;
+    list-style: none;
+  }
+  .trends:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.cor__conteiner .carousel {
+  overflow: hidden;
+  width: 1350px;
+  /* Ширина корусели */
+  height: 300px;
+  /* Высота корусели */
+  margin: auto;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+.cor__conteiner .carousel .carousel-container {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 4050px;
+  /* Обновленная общая ширина всех слайдов (800px * 3) */
+}
+.cor__conteiner .carousel .carousel-slide {
+  flex: 0 0 1350px;
+  /* Ширина слайда */
+  height: 200px;
+  /* Высота слайда */
+}
+.cor__conteiner .carousel .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cor__conteiner .carousel .carousel-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+}
+.cor__conteiner .carousel .carousel-buttons button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(60, 190, 255);
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 18px;
+}
+.cor__conteiner .carousel .carousel-indicators {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.cor__conteiner .carousel .carousel-indicators span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.cor__conteiner .carousel .carousel-indicators .active {
+  background-color: rgb(60, 190, 255);
+}
+
+@media (max-width: 1280px) {
+  .cor__conteiner .carousel {
+    overflow: hidden;
+    width: 900px;
+    /* Ширина корусели */
+    height: 470px;
+    /* Высота корусели */
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .cor__conteiner .carousel .carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 2700px;
+    /* Обновленная общая ширина всех слайдов (800px * 3) */
+  }
+  .cor__conteiner .carousel .carousel-slide {
+    flex: 0 0 900px;
+    /* Ширина слайда */
+    height: 400px;
+    /* Высота слайда */
+  }
+  .cor__conteiner .carousel .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cor__conteiner .carousel .carousel-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+  .cor__conteiner .carousel .carousel-buttons button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgb(60, 190, 255);
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 18px;
+    z-index: 1;
+  }
+  .cor__conteiner .carousel .carousel-indicators {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .cor__conteiner .carousel .carousel-indicators span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .cor__conteiner .carousel .carousel-indicators .active {
+    background-color: rgb(60, 190, 255);
+  }
+}
+@media (max-width: 768px) {
+  .cor__conteiner .carousel {
+    overflow: hidden;
+    width: 500px;
+    /* Ширина корусели */
+    height: 270px;
+    /* Высота корусели */
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .cor__conteiner .carousel .carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 1500px;
+    /* Обновленная общая ширина всех слайдов (800px * 3) */
+  }
+  .cor__conteiner .carousel .carousel-slide {
+    flex: 0 0 500px;
+    /* Ширина слайда */
+    height: 210px;
+    /* Высота слайда */
+  }
+  .cor__conteiner .carousel .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cor__conteiner .carousel .carousel-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+  .cor__conteiner .carousel .carousel-buttons button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgb(60, 190, 255);
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 18px;
+    z-index: 1;
+  }
+  .cor__conteiner .carousel .carousel-indicators {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .cor__conteiner .carousel .carousel-indicators span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .cor__conteiner .carousel .carousel-indicators .active {
+    background-color: rgb(60, 190, 255);
+  }
+}
+@media (max-width: 430px) {
+  .cor__conteiner .carousel {
+    overflow: hidden;
+    width: 300px;
+    /* Ширина корусели */
+    height: 210px;
+    /* Высота корусели */
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .cor__conteiner .carousel .carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 900px;
+    /* Обновленная общая ширина всех слайдов (800px * 3) */
+  }
+  .cor__conteiner .carousel .carousel-slide {
+    flex: 0 0 300px;
+    /* Ширина слайда */
+    height: 150px;
+    /* Высота слайда */
+  }
+  .cor__conteiner .carousel .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cor__conteiner .carousel .carousel-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+  .cor__conteiner .carousel .carousel-buttons button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgb(60, 190, 255);
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 18px;
+    z-index: 1;
+  }
+  .cor__conteiner .carousel .carousel-indicators {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .cor__conteiner .carousel .carousel-indicators span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .cor__conteiner .carousel .carousel-indicators .active {
+    background-color: rgb(60, 190, 255);
+  }
+}
+.card_title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px;
+  padding-top: 0px;
+}
+.conteiner .card {
+  padding: 40px;
+}
+.conteiner .card .logo_card {
+  width: 200px;
+  height: 210px;
+}
+.conteiner .card .card_main {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.conteiner .card .card_main .rewie_card {
+  width: 60px;
+}
+.conteiner .card p {
+  margin: 0;
+}
+.conteiner .card .buy_card {
+  margin-top: 20px;
+  background-color: rgb(0, 119, 255);
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+}
+.conteiner .card .buy_card:hover {
+  background-color: rgb(3, 103, 216);
+}
+.conteiner .card .buy_card:active {
+  opacity: 0.8;
+}
+
+@media (max-width: 430px) {
+  .card_title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px;
+    padding-top: 0px;
+  }
+  .conteiner .card {
+    padding: 40px;
+  }
+  .conteiner .card .logo_card {
+    width: 160px;
+    height: 170px;
+  }
+  .conteiner .card .card_main {
+    width: 140px;
+    height: 100px;
+  }
+  .conteiner .card .card_main .rewie_card {
+    width: 60px;
+  }
+  .conteiner .card p {
+    margin: 0;
+  }
+  .conteiner .card .buy_card {
+    margin-top: 20px;
+    background-color: rgb(0, 119, 255);
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .conteiner .card .buy_card:hover {
+    background-color: rgb(3, 103, 216);
+  }
+  .conteiner .card .buy_card:active {
+    opacity: 0.8;
+  }
+}/*# sourceMappingURL=main.css.map */

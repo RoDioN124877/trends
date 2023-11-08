@@ -1,0 +1,308 @@
+.cor__conteiner {
+
+  .carousel {
+    overflow: hidden;
+    width: 1350px;
+    /* Ширина корусели */
+    height: 300px;
+    /* Высота корусели */
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 0px;
+
+    .carousel-container {
+      display: flex;
+      transition: transform 0.3s ease;
+      width: 4050px;
+      /* Обновленная общая ширина всех слайдов (800px * 3) */
+    }
+
+    .carousel-slide {
+      flex: 0 0 1350px;
+      /* Ширина слайда */
+      height: 200px;
+
+      /* Высота слайда */
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      right: 0;
+
+      button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: rgb(60, 190, 255);
+        color: black;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 5px;
+        font-size: 18px;
+      }
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      span {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .active {
+        background-color: rgb(60, 190, 255);
+      }
+    }
+  }
+}
+
+@media(max-width: 1280px) {
+  .cor__conteiner {
+
+    .carousel {
+      overflow: hidden;
+      width: 900px;
+      /* Ширина корусели */
+      height: 470px;
+      /* Высота корусели */
+      margin: auto;
+      position: relative;
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      .carousel-container {
+        display: flex;
+        transition: transform 0.3s ease;
+        width: 2700px;
+        /* Обновленная общая ширина всех слайдов (800px * 3) */
+      }
+
+      .carousel-slide {
+        flex: 0 0 900px;
+        /* Ширина слайда */
+        height: 400px;
+
+        /* Высота слайда */
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .carousel-buttons {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border: none;
+          background-color: rgb(60, 190, 255);
+          color: black;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0 5px;
+          font-size: 18px;
+          z-index: 1;
+        }
+      }
+
+      .carousel-indicators {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        span {
+          width: 10px;
+          height: 10px;
+          background-color: #ccc;
+          border-radius: 50%;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+
+        .active {
+          background-color: rgb(60, 190, 255);
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .cor__conteiner {
+
+    .carousel {
+      overflow: hidden;
+      width: 500px;
+      /* Ширина корусели */
+      height: 270px;
+      /* Высота корусели */
+      margin: auto;
+      position: relative;
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      .carousel-container {
+        display: flex;
+        transition: transform 0.3s ease;
+        width: 1500px;
+        /* Обновленная общая ширина всех слайдов (800px * 3) */
+      }
+
+      .carousel-slide {
+        flex: 0 0 500px;
+        /* Ширина слайда */
+        height: 210px;
+
+        /* Высота слайда */
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .carousel-buttons {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border: none;
+          background-color: rgb(60, 190, 255);
+          color: black;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0 5px;
+          font-size: 18px;
+          z-index: 1;
+        }
+      }
+
+      .carousel-indicators {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        span {
+          width: 10px;
+          height: 10px;
+          background-color: #ccc;
+          border-radius: 50%;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+
+        .active {
+          background-color: rgb(60, 190, 255);
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 430px) {
+  .cor__conteiner {
+
+    .carousel {
+      overflow: hidden;
+      width: 300px;
+      /* Ширина корусели */
+      height: 210px;
+      /* Высота корусели */
+      margin: auto;
+      position: relative;
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      .carousel-container {
+        display: flex;
+        transition: transform 0.3s ease;
+        width: 900px;
+        /* Обновленная общая ширина всех слайдов (800px * 3) */
+      }
+
+      .carousel-slide {
+        flex: 0 0 300px;
+        /* Ширина слайда */
+        height: 150px;
+
+        /* Высота слайда */
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .carousel-buttons {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border: none;
+          background-color: rgb(60, 190, 255);
+          color: black;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0 5px;
+          font-size: 18px;
+          z-index: 1;
+        }
+      }
+
+      .carousel-indicators {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        span {
+          width: 10px;
+          height: 10px;
+          background-color: #ccc;
+          border-radius: 50%;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+
+        .active {
+          background-color: rgb(60, 190, 255);
+        }
+      }
+    }
+  }
+}

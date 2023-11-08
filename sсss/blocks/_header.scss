@@ -1,0 +1,217 @@
+header {
+
+    .header__top {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 100px;
+        position: fixed;
+        z-index: 3;
+        background-color: #fff;
+        width: 100%;
+
+        .logo {
+            img {
+                width: 300px;
+            }
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .search {
+            position: relative;
+            z-index: 3;
+
+            .search_input {
+                width: 500px;
+                height: 50px;
+                border: 2px solid rgb(255, 255, 255);
+                border-radius: 20px;
+                background-color: rgb(238, 238, 238);
+                transition: 0.2s;
+                outline: none;
+
+                &:hover {
+                    background-color: rgb(255, 255, 255);
+                    border: 2px solid rgb(238, 238, 238);
+                }
+
+                &:active {
+                    background-color: rgb(255, 255, 255);
+                    border: 2px solid rgb(238, 238, 238);
+                }
+            }
+
+            .search_btn {
+                width: 30px;
+                height: 30px;
+                background-image: url(../img/header/searchBTN.png);
+                background-position: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .basket {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+
+
+            P {
+                color: rgb(60, 190, 255);
+                margin: 0%;
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+}
+
+.navbar-nav {
+    margin: auto;
+    margin-top: 100px;
+}
+
+.trends {
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+        transition: 0.5s
+    }
+
+    @include font_settings(700, 20px, normal);
+    color: black;
+    list-style: none;
+
+
+}
+
+.navbar-brand {
+    display: none;
+}
+.mr_custom{
+    margin-top: 10px;
+}
+
+
+@media (max-width:990px) {
+    .navbar-brand {
+        display: block;
+    }
+}
+
+@media (max-width:600px) {
+    header {
+
+        .header__top {
+            padding-top: 50px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 10px;
+            align-items: center;
+            min-height: 100px;
+            position: static;
+
+            .logo {
+                @include font_settings(700, 16px, normal);
+                display: flex;
+                align-items: center;
+
+                span {
+                    @include font_settings(700, 25px, normal);
+                    color: rgb(60, 190, 255);
+                }
+            }
+
+            .search {
+
+                .search_input {
+                    width: 200px;
+                    height: 50px;
+                    border: 2px solid rgb(255, 255, 255);
+                    border-radius: 20px;
+                    background-color: rgb(238, 238, 238);
+                    transition: 0.2s;
+                    outline: none;
+
+                    &:hover {
+                        background-color: rgb(255, 255, 255);
+                        border: 2px solid rgb(238, 238, 238);
+                    }
+
+                    &:active {
+                        background-color: rgb(255, 255, 255);
+                        border: 2px solid rgb(238, 238, 238);
+                    }
+                }
+
+                .search_btn {
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(../img/header/searchBTN.png);
+                    background-position: 100%;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .basket {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+
+                P {
+                    color: rgb(60, 190, 255);
+                    margin: 0%;
+                }
+
+                img {
+                    width: 50px;
+                }
+            }
+        }
+
+
+
+
+    }
+
+    .trends {
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.8;
+            transition: 0.5s
+        }
+
+        @include font_settings(400, 20px, normal);
+        color: black;
+        list-style: none;
+
+
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}

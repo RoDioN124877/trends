@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header__top">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+      <div class="search" id="s">
+        <input type="text" class="search_input">
+        <div class="search_btn"></div>
+      </div>
+      <a href="basket.html" class="basket">
+        <p>Ваши покупки</p>
+        <img src="img/header/basket.png" alt="">
+      </a>
+    </div>
+    <div class="header__nav__kateg">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Адрес магазина</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Новости и новые товары</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true"><select name="" id="">
+                    <option value="rus">rus</option>
+                    <option value="kz">kz</option>
+                    <option value="en">en</option>
+                  </select></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <p class="navbar-brand ">Каталог товаров:</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 mr_custom">
+            <li class="nav-item ">
+              <a class="trends" href="#">Тренды для кухни</a>
+            </li>
+            <li class="nav-item ">
+              <a class="trends" href="#">Тренды для гостиной</a>
+            </li>
+            <li class="nav-item ">
+              <a class="trends" href="#">Тренды для спальни</a>
+            </li>
+            <li class="nav-item ">
+              <a class="trends" href="#">Тренды для детей</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="cor__conteiner">
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <a href=""><img src="img/corusel/Без имени-1.png" alt="Slide 1"></a>
+          </div>
+          <div class="carousel-slide">
+            <a href=""><img src="img/corusel/Без имени-1.png" alt="Slide 2"></a>
+          </div>
+          <div class="carousel-slide">
+            <a href=""><img src="img/corusel/Без имени-1.png" alt="Slide 3"></a>
+          </div>
+          <div class="carousel-slide">
+            <a href=""><img src="img/corusel/Без имени-1.png" alt="Slide 3"></a>
+          </div>
+        </div>
+        <div class="carousel-buttons">
+          <button class="prev-button">&lt;</button>
+          <button class="next-button">&gt;</button>
+        </div>
+        <div class="carousel-indicators"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="card_title">Товары</h2>
+      <div class="conteiner">
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <a href="html/Сиденье WellBlue 510 510x370 мм.html" class="title">Сиденье WellBlue 510 510x370 мм</a>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">Сиденье WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">150 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+        <div class="card">
+          <img class="logo_card" src="img/card/Сиденье WellBlue 510 510x370 мм/67334461489182.jpg" alt="">
+          <div class="card_main">
+            <p class="title">22 WellBlue 510 510x370 мм</p>
+            <img class="rewie_card" src="img/card/star/5.png" alt="">
+          </div>
+          <p class="price">1502 000 ₸</p>
+          <button class="buy_card">Купить</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="js/basket.js"></script>
+  <script src="js/corusel.js"></script>
+  <script src="js/header.js"></script>
+</body>
+
+</html>
