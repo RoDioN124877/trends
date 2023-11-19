@@ -42,10 +42,12 @@ function displayCartItems() {
   const cartItemsContainer = document.getElementById('cart-items');
   const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
+  cartItemsContainer.innerHTML = ''; // Очищаем контейнер перед обновлением
+
   cartItems.forEach((item) => {
     const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item'); // Уникальный идентификатор товара
     cartItem.innerHTML = `
-      <div class="cart-item">
         <img src="${item.logo}" alt="${item.title}">
         <h3>${item.title}</h3>
         <p>${item.price}</p>
@@ -55,7 +57,6 @@ function displayCartItems() {
           <button class="increase-quantity">+</button>
         </div>
         <button class="remove-item">Удалить</button>
-      </div>
     `;
     cartItemsContainer.appendChild(cartItem);
 
@@ -93,7 +94,7 @@ function removeFromCart(item) {
   const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
   // Удаляем товар из корзины
-  const index = cartItems.findIndex((cartItem) => cartItem.title === item.title);
+  const index = cartItems.findIndex((cartItem) => cartItem.id === item.id);
   if (index !== -1) {
     cartItems.splice(index, 1);
 
@@ -107,7 +108,7 @@ function updateCartItemQuantity(item, newQuantity) {
   const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
   // Обновляем количество товара
-  const existingItem = cartItems.find((cartItem) => cartItem.title === item.title);
+  const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
   if (existingItem) {
     existingItem.quantity = newQuantity;
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
@@ -117,7 +118,7 @@ function updateCartItemQuantity(item, newQuantity) {
 function increaseCartItemQuantity(item) {
   // Увеличиваем количество товара на 1
   const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-  const existingItem = cartItems.find((cartItem) => cartItem.title === item.title);
+  const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
   if (existingItem) {
     existingItem.quantity += 1;
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
@@ -127,7 +128,7 @@ function increaseCartItemQuantity(item) {
 function decreaseCartItemQuantity(item) {
   // Уменьшаем количество товара на 1
   const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-  const existingItem = cartItems.find((cartItem) => cartItem.title === item.title);
+  const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
   if (existingItem && existingItem.quantity > 1) {
     existingItem.quantity -= 1;
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
